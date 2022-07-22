@@ -1,0 +1,72 @@
+@use '../abstracts' as *;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+$font-family-one: "Montserrat", sans-serif;
+
+html {
+  font-family: $font-family-one, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin: 0;
+  color: aliceblue;
+  background-color: #06233e;
+}
+
+a {
+  &,
+  &:link,
+  &:visited,
+  &:active {
+    font-family: $font-family-one, sans-serif;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+  }
+}
+
+nav ul {
+  list-style: none;
+}
+
+button {
+  font-family: $font-family-one, sans-serif;
+  width: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+span {
+  color: inherit;
+}

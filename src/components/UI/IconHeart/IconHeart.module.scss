@@ -1,0 +1,51 @@
+.like {
+  display: inline-block;
+  font-size: 104px;
+  color: #d02525;
+  opacity: 1;
+  position: absolute;
+  bottom: 65px;
+  right: 24%;
+  z-index: -1;
+
+  &--active {
+    animation: fade 1s ease-in both, rotate-like 1.3s ease-in infinite alternate;
+    z-index: 10;
+  }
+}
+
+@keyframes go-up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-150px);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-like {
+  0% {
+    transform: translateY(0) rotate(-50deg);
+  }
+  50% {
+    transform: rotate(1);
+  }
+
+  100% {
+    transform: translateY(-150px) rotate(50deg);
+  }
+}

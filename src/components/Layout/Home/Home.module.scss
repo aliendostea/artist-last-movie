@@ -1,0 +1,13 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  &-title {
+    display: inline;
+    font-size: 4.5rem;
+    text-align: center;
+  }
+}

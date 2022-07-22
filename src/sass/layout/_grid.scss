@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.main-content {
+  display: grid;
+  grid-template-columns: minmax(min-content, 80rem);
+  grid-template-rows: min-content min-content min-content minmax(20rem, 1fr);
+  grid-row-gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 7rem 0 12rem 0;
+}
+
+.main-content__parent {
+  display: grid;
+  grid-template-rows: 8rem minmax(10rem, 1fr);
+}

@@ -1,0 +1,39 @@
+.slide-top-card-form {
+  -webkit-animation: slide-top-card-form 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top-card-form 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-top-card-form {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(27px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: fade-in 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

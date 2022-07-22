@@ -1,0 +1,63 @@
+.details {
+  padding: 0 3.5rem;
+  &__img-box-parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 150px));
+    gap: 2rem;
+    margin: 2rem;
+  }
+  &__img-box {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-self: stretch;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: hsla(208, 61%, 20%, 0.356);
+    color: hsla(208, 100%, 97%, 0.11);
+
+    & img {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      object-fit: cover;
+    }
+  }
+  &-box1 {
+    display: grid;
+    justify-items: left;
+    align-content: center;
+  }
+  &-box2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+    gap: 15px;
+    margin-bottom: 10rem;
+  }
+  &-title {
+    display: block;
+    font-size: clamp(4.5rem, 12vw + 1rem, 7.5rem);
+    font-weight: 615;
+    line-height: 1;
+    text-align: left;
+
+    &2 {
+      display: block;
+      font-weight: 821;
+      font-size: clamp(2.7rem, 5vw, 3.7rem);
+      text-align: left;
+      margin: 8rem 0 2rem 0;
+    }
+  }
+  &-span1 {
+    grid-column: 1 / -1;
+    display: block;
+    font-size: 3.1rem;
+    font-weight: 200;
+    line-height: 1;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

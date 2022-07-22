@@ -1,0 +1,92 @@
+.card {
+  height: 33rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: minmax(20rem, 30rem) min-content;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 1rem;
+  padding: 0;
+  border-radius: 0;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  overflow: hidden;
+  color: aliceblue;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-5px) scale(1.02);
+  }
+
+  &-link {
+    height: 100%;
+    justify-self: stretch;
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-self: stretch;
+    overflow: hidden;
+    border-radius: 24px;
+    background-color: hsla(208, 61%, 20%, 0.356);
+    color: hsla(208, 100%, 97%, 0.11);
+  }
+
+  &-imgItem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &-imgItem-null {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5) translateY(8px) translateX(3px);
+  }
+  &-title-box {
+    text-align: left;
+  }
+
+  &-title {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #d7d7d7;
+    margin-bottom: 0.45rem;
+  }
+}
+
+.material-heart {
+  font-size: 24px;
+  color: #b9b9b9;
+
+  &-liked {
+    color: #d02525;
+  }
+}
+
+.btn-heart {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+
+  & .material-heart {
+    font-size: 24px;
+    color: #d7d7d7;
+  }
+
+  &-title2 {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.27px;
+    color: #d7d7d7;
+  }
+}
