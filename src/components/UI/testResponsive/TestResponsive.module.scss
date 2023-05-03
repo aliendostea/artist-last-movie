@@ -1,0 +1,70 @@
+@use "../../../sass/abstracts/mixins" as responsive;
+
+.responsive {
+  width: 24rem;
+  grid-template-columns: repeat(2, min-content);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.8rem;
+  border-radius: 10px;
+  background-color: rgb(130, 172, 172);
+  position: fixed;
+  top: 10px;
+  left: 150px;
+  z-index: 1000;
+}
+
+.responsive > button {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-ligth);
+  border: 3px solid aliceblue;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 16px 8px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  z-index: 10;
+}
+
+@include responsive.respond(tab-between-port-land) {
+  .responsive {
+    background-color: rgb(52, 136, 49);
+  }
+}
+
+@include responsive.respond(tab-port) {
+  .responsive {
+    background-color: rgb(170, 160, 21);
+  }
+}
+
+@include responsive.respond(phone) {
+  .responsive {
+    background-color: rgb(136, 67, 136);
+  }
+}
+
+@include responsive.respond(mini-phone) {
+  .responsive {
+    background-color: rgb(68, 218, 210);
+  }
+}

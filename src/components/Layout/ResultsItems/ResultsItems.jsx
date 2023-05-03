@@ -6,7 +6,7 @@ import {
   setEndpointSearchPerson,
 } from "../../../services/endpoints/endpointSearchPerson";
 import { motion } from "framer-motion";
-import style from "./ResultsItems.module.css";
+import style from "./ResultsItems.module.scss";
 import Card from "../../UI/Cards/Card";
 import LastElementScroll from "../../UI/InfiniteScroll/LastElementScroll";
 import useInfiniteScrolling from "../../../hooks/use-infinite-scrolling";

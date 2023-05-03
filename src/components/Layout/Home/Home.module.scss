@@ -1,3 +1,5 @@
+@use "../../../sass/abstracts/mixins" as responsive;
+
 .home {
   display: grid;
   grid-template-columns: 1fr;
@@ -5,9 +7,17 @@
   align-items: center;
   gap: 3rem;
 
+  @include responsive.respond(tab-port) {
+    padding: 0 2rem;
+  }
+
   &-title {
     display: inline;
     font-size: 4.5rem;
     text-align: center;
+
+    @include responsive.respond(mini-phone) {
+      font-size: 3.5rem;
+    }
   }
 }

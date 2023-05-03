@@ -1,0 +1,22 @@
+@use "../../../sass/abstracts/mixins" as responsive;
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20rem, 29rem));
+  grid-template-rows: 1fr;
+  grid-gap: 7rem;
+  justify-content: center;
+
+  @include responsive.respond(tab-port) {
+    grid-template-columns: repeat(3, minmax(13rem, 23rem));
+    grid-gap: 2rem;
+  }
+
+  @include responsive.respond(phone) {
+    grid-template-columns: repeat(auto-fit, minmax(min(145px, 100%), 1fr));
+  }
+}
+
+.empty {
+  grid-column: 1 / 4;
+}

@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts/mixins" as responsive;
 
 .main-content {
   display: grid;
@@ -9,6 +9,13 @@
   align-content: center;
   text-align: center;
   padding: 7rem 0 12rem 0;
+
+  @include responsive.respond(tab-port) {
+    grid-template-columns: minmax(min-content, 68rem);
+  }
+  @include responsive.respond(phone) {
+    padding: 3rem 0 12rem 0;
+  }
 }
 
 .main-content__parent {

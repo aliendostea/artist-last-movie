@@ -66,7 +66,7 @@ const ItemFilter = () => {
 
   return (
     <div className={style["filter"]}>
-      Filter By:
+      <span>Filter By:</span>
       {arrayButtons.map((btn) => (
         <button
           key={btn.name}

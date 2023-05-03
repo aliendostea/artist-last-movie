@@ -5,3 +5,4 @@ lerna-debug.log
 .env.development.local
 storybook-static
 css
+.env

@@ -1,3 +1,5 @@
+@use "../../../sass/abstracts/mixins" as responsive;
+
 .filter {
   display: grid;
   grid-template-columns: max-content repeat(5, minmax(5rem, 15rem));
@@ -5,6 +7,21 @@
   align-items: center;
   gap: 1rem;
   color: #c4c4c4;
+
+  @include responsive.respond(tab-port) {
+    grid-template-columns: max-content repeat(4, minmax(2rem, 11rem));
+  }
+
+  @include responsive.respond(phone) {
+    /*  grid-template-columns: repeat(4, minmax(5rem, 10rem)); */
+    grid-template-columns: repeat(2, minmax(11rem, 15rem));
+
+    & > span:nth-child(1) {
+      grid-column: 1 / -1;
+      display: block;
+      justify-self: start;
+    }
+  }
 }
 
 $translateY-1px: translateY(1px);
